@@ -14,8 +14,13 @@ function makeGrid(dimension){
         div.classList.add("gridBlock");
     
         div.addEventListener("mouseover", function(event){
-            let r, b, g = Math.floor(Math.random() * 255);
+
+            let r = Math.floor(Math.random() * 255);
+            let g = Math.floor(Math.random() * 255);
+            let b = Math.floor(Math.random() * 255);
+
             event.target.style.backgroundColor = `rgb(${r},${b},${g})`;
+
         });
     
         mainContainer.appendChild(div);
